@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel = "stylesheet" type="text/css" href = "style.css">
+</head>
+<body>
+    <p class = "title">Rock Paper Scissor</p>
+    <button onclick="Num = Math.random(); whoWon(1, Num);" class="move-button">
+        <img  class = "move-icon" src="images/rock-emoji.png">
+    </button>
+    <button onclick="Num = Math.random(); whoWon(2, Num);"class="move-button">
+        <img class = "move-icon" src="images/paper-emoji.png">
+    </button>
+    <button onclick="Num = Math.random(); whoWon(3, Num);"class="move-button">
+        <img class = "move-icon" src="images/scissors-emoji.png">
+    </button>
+
+
+    <p class = "js-result result"></p>
+    <p class = "js-moves moves"> Player chose <span class = "player-moves"></span> , Computer chose <span class = "computer-moves"></span></p>
+    <p class = "js-score score"></p>
+    <button class = "resetButton" onclick="
+    whenResetIsPressed();
+    ">Reset score</button>
+    <script src = "game.js"></script>
+</body>
+</html>
